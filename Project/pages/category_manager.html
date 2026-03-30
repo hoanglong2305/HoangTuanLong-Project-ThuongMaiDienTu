@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/category_manager.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="app-container">
+        <aside class="navigation">
+            <div class="logo">
+                <i class="fas fa-fire"></i> <strong>Ecommerce</strong>
+            </div>
+            <nav class="menu">
+                <div class="menu-item"><i class="fas fa-chart-line"></i> Thống kê</div>
+                <div class="menu-item active"><i class="fas fa-list"></i> Danh mục</div>
+                <div class="menu-item"><i class="fas fa-box"></i> Sản phẩm</div>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="header">
+                <i class="far fa-bell"></i>
+                <img src="../assets/avatar.png" alt="User">
+            </header>
+
+            <section class="content-header">
+                <h2>Danh mục</h2>
+                <button class="btn-add">Thêm mới danh mục</button>
+            </section>
+
+            <section class="filter-bar">
+                <select class="status-select">
+                    <option>Đang hoạt động</option>
+                </select>
+                <div class="search-box">
+                    <input type="text" placeholder="Tìm kiếm danh mục theo tên">
+                    <i class="fas fa-search"></i>
+                </div>
+            </section>
+
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Mã danh mục <i class="fas fa-arrow-down"></i></th>
+                        <th>Tên danh mục <i class="fas fa-arrow-down"></i></th>
+                        <th>Trạng thái</th>
+                        <th style="text-align: right;">Chức năng</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>DM001</td>
+                        <td>Quần áo</td>
+                        <td><span class="status-active">● Đang hoạt động</span></td>
+                        <td class="actions">
+                            <i class="fas fa-trash"></i>
+                            <i class="fas fa-pen"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>DM002</td>
+                        <td>Kính mắt</td>
+                        <td><span class="status-active" style="background-color: #FEF2F2; color: #B91C1C;">● Ngừng hoạt động</span></td>
+                        <td class="actions">
+                            <i class="fas fa-trash"></i>
+                            <i class="fas fa-pen"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>DM003</td>
+                        <td>Giày dép</td>
+                        <td><span class="status-active">● Đang hoạt động</span></td>
+                        <td class="actions">
+                            <i class="fas fa-trash"></i>
+                            <i class="fas fa-pen"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>DM004</td>
+                        <td>Thời trang nam</td>
+                        <td><span class="status-active" style="background-color: #FEF2F2; color: #B91C1C;">● Ngừng hoạt động</span></td>
+                        <td class="actions">
+                            <i class="fas fa-trash"></i>
+                            <i class="fas fa-pen"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>DM005</td>
+                        <td>Thời trang nữ</td>
+                        <td><span class="status-active" style="background-color: #FEF2F2; color: #B91C1C;">● Ngừng hoạt động</span></td>
+                        <td class="actions">
+                            <i class="fas fa-trash"></i>
+                            <i class="fas fa-pen"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>DM006</td>
+                        <td>Hoa quả</td>
+                        <td><span class="status-active" style="background-color: #FEF2F2; color: #B91C1C;">● Ngừng hoạt động</span></td>
+                        <td class="actions">
+                            <i class="fas fa-trash"></i>
+                            <i class="fas fa-pen"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>DM007</td>
+                        <td>Rau</td>
+                        <td><span class="status-active">● Đang hoạt động</span></td>
+                        <td class="actions">
+                            <i class="fas fa-trash"></i>
+                            <i class="fas fa-pen"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>DM008</td>
+                        <td>Điện thoại</td>
+                        <td><span class="status-active" style="background-color: #FEF2F2; color: #B91C1C;">● Ngừng hoạt động</span></td>
+                        <td class="actions">
+                            <i class="fas fa-trash"></i>
+                            <i class="fas fa-pen"></i>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="pagination">
+                <button>&lt;</button>
+                <button>1</button>
+                <button>2</button>
+                <button class="page-active">3</button>
+                <button>4</button>
+                <span>...</span>
+                <button>20</button>
+                <button>&gt;</button>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
