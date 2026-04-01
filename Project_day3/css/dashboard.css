@@ -1,0 +1,412 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 160px; /* Tăng padding để nội dung thu vào giữa */
+    border-bottom: 1px solid #f5f5f5;
+}   
+
+.search_bar {
+    display: flex;
+    align-items: center;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    padding: 0 16px;
+    width: 372px;
+    height: 40px;
+}
+
+.search_bar img {
+    width: 20px;
+    height: 20px;
+    opacity: 0.5;
+}
+
+.search_bar input {
+    border: none;
+    background: transparent;
+    padding: 0 12px;
+    width: 100%;
+    outline: none;
+    font-size: 14px;
+    color: #989898;
+}
+
+/* Navigation: Khoảng cách giữa các chữ */
+.nav_bar {
+    display: flex;
+    gap: 40px;
+}
+
+.nav_bar a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+/* Icons bên phải: Căn chỉnh kích thước và khoảng cách */
+.nav_icon {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.nav_icon .icon {
+    font-size: 24px;
+    cursor: pointer;
+    color: #000;
+}
+
+.subnav {
+    display: flex;
+    justify-content: center;
+    background-color: #2e2e2e;
+    padding: 12px 0;
+}
+
+.subnav div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    /* Tạo độ rộng cố định hoặc padding để các đường kẻ cách đều */
+    padding: 0 30px; 
+    border-right: 1px solid rgba(255, 255, 255, 0.2); /* Đường kẻ dọc */
+}
+
+/* Xóa đường kẻ dọc ở mục cuối cùng */
+.subnav div:last-child {
+    border-right: none;
+}
+
+.subnav div:hover {
+    color: #ffffff;
+}
+
+.banner {
+    background-color: #211c24;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 160px; /* Đảm bảo cùng padding với header */
+    height: 632px;
+    overflow: hidden;
+}
+
+.banner .content {
+    color: white;
+    max-width: 500px;
+}
+
+.banner h3 {
+    font-size: 25px;
+    color: rgba(255, 255, 255, 0.4);
+    margin-bottom: 16px;
+}
+
+.banner h1 {
+    font-size: 96px;
+    line-height: 1;
+    font-weight: 200;
+    margin-bottom: 16px;
+    width: 714px;
+}
+
+.banner h1 .pro {
+    font-weight: 700;
+}
+
+.banner p {
+    color: #909090;
+    margin-bottom: 32px;
+}
+
+.banner button {
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 16px 56px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    width:187px ;
+    height:56px ;
+}
+
+.category {
+    padding: 80px 160px;
+    background-color: #fafafa;
+}
+
+.category .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.cate_list {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 16px;
+}
+
+.category_card {
+    background: #ededed;
+    border-radius: 15px;
+    padding: 45px;
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    height: 128px;
+}
+
+.products {
+    padding: 80px 160px;
+}
+
+.tags {
+    display: flex;
+    gap: 32px;
+    margin-bottom: 32px;
+}
+
+.tags span {
+    color: #8b8b8b;
+    cursor: pointer;
+}
+
+.tags .select {
+    color: #000;
+    font-weight: 700;
+    border-bottom: 2px solid black;
+}
+
+.products_grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
+.product_card,
+.product_cart {
+    background-color: #f6f6f6;
+    border-radius: 9px;
+    padding: 24px;
+    text-align: center;
+    position: relative;
+}
+
+.product_card {
+    position: relative;
+    background-color: #f6f6f6;
+    border-radius: 15px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top_section {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    z-index: 10;
+}
+
+.top_section img {
+    width: 32px !important;
+    height: 32px !important;
+    object-fit: contain;
+    display: block;
+}
+
+.product_card>img {
+    width: 160px;
+    height: 160px;
+    margin-top: 20px;
+    object-fit: contain;
+}
+
+.products_grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    padding: 40px 0;
+}
+
+.row,
+.pair {
+    display: contents;
+}
+
+.product_card img,
+.product_cart img {
+    width: 100%;
+    height: 160px;
+    object-fit: contain;
+    margin-bottom: 16px;
+}
+
+.info p {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    height: 40px;
+}
+
+.info span {
+    font-size: 24px;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.discount_product {
+    padding: 80px 160px;
+}
+
+.discount_product h3 {
+    margin-bottom: 32px;
+    font-size: 24px;
+}
+
+.discount_product .row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
+.banner2 {
+    background-image: url('../assets/images/banner/Banner 2.png'); 
+    background-color: #212121;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    height: 448px; /* Độ cao cố định như code cũ của bạn */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner2 .content {
+    /* Đảm bảo nội dung chữ nằm chính giữa và nổi bật */
+    max-width: 600px;
+}
+
+.banner2 h2 {
+    font-size: 72px; /* Kích thước chữ lớn như ảnh mẫu */
+    font-weight: 300;
+    margin-bottom: 12px;
+    letter-spacing: -1px;
+}
+
+.banner2 p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 16px;
+    margin-bottom: 32px;
+}
+
+.banner2 button {
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 16px 56px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    width: auto; /* Để nút co giãn theo chữ bên trong */
+    transition: all 0.3s ease;
+}
+
+.banner2 button:hover {
+    background: white;
+    color: black;
+}
+.footer {
+    background-color: #000;
+    color: white;
+    padding: 80px 160px;
+}
+
+.footer .info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.LogonText {
+    max-width: 380px;
+}
+
+
+.LogonText p {
+    margin-top: 24px;
+    color: #cfcfcf;
+    line-height: 1.6;
+}
+
+.footer_navigation {
+    display: flex;
+    gap: 120px;
+}
+
+.section p {
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.section a {
+    display: block;
+    color: #cfcfcf;
+    text-decoration: none;
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+.social_icon {
+    display: flex;
+    gap: 24px;
+    justify-content: flex-start;
+}
+
+.arrow {
+    display: flex;
+    gap: 8px;
+}
+
+.arrow_icon {
+    width: 32px;
+    height: 32px;
+}
