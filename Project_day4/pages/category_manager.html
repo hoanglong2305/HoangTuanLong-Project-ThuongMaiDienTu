@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lí</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/category_manager.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="app-container">
+        <aside class="navigation">
+            <div class="logo">
+                <i class="fas fa-fire"></i> <strong>Ecommerce</strong>
+            </div>
+            <nav class="menu">
+                <div class="menu-item"><img src="../assets/Icon/32px/home.png" alt=""> Thống kê</div>
+                <div class="menu-item active"><img src="../assets/Icon/32px/Vector.png" alt=""> Danh mục</div>
+                <div class="menu-item"><img src="../assets/Icon/32px/folder.png" alt=""> Sản phẩm</div>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="header">
+                <i class="far fa-bell"></i>
+                <img src="../assets/images/product/avatar.png" alt="User">
+            </header>
+            <hr>
+            <section class="content-header">
+                <h2>Danh mục</h2>
+                <button class="btn-add">Thêm mới danh mục</button>
+            </section>
+
+            <section class="filter-bar">
+                <div class="select_bar">
+                    <select class="status-select">
+                        <option class="opt">Đang hoạt động</option>
+                        <option class="opt">Tất cả</option>
+                        <option class="opt">Ngừng hoạt động</option>
+                    </select>
+                </div>
+                <div class="search-box">
+                    <input type="text" placeholder="Tìm kiếm danh mục theo tên">
+                    <i class="fas fa-search"></i>
+                </div>
+            </section>
+
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Mã danh mục <i class="fas fa-arrow-down"></i></th>
+                        <th>Tên danh mục <i class="fas fa-arrow-down"></i></th>
+                        <th>Trạng thái</th>
+                        <th
+                            style="width: 169px; height: 44px; opacity: 1; border-bottom-width: 1px; gap: 12px; padding-top: 12px; padding-right: 24px; padding-bottom: 12px; padding-left: 24px;">
+                            Chức năng</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>DM001</td>
+                        <td>Quần áo</td>
+                        <td><span class="status-active">● Đang hoạt động</span></td>
+                        <td class="actions">
+                            <div class="actions-container">
+                                <img src="../assets/Icon/32px/remove.png" alt="remove" class="remove">
+                                <img src="../assets/Icon/32px/edit.png" alt="edit" class="edit">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>DM002</td>
+                        <td>Kính mắt</td>
+                        <td><span class="status-active" style="background-color: #FEF2F2; color: #B91C1C;">● Ngừng hoạt
+                                động</span></td>
+                        <td class="actions">
+                            <div class="actions-container">
+                                <img src="../assets/Icon/32px/remove.png" alt="remove" class="remove">
+                                <img src="../assets/Icon/32px/edit.png" alt="edit" class="edit">
+                            </div>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>DM003</td>
+                        <td>Giày dép</td>
+                        <td><span class="status-active">● Đang hoạt động</span></td>
+                        <td class="actions">
+                            <div class="actions-container">
+                                <img src="../assets/Icon/32px/remove.png" alt="remove" class="remove">
+                                <img src="../assets/Icon/32px/edit.png" alt="edit" class="edit">
+                            </div>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>DM004</td>
+                        <td>Thời trang nam</td>
+                        <td><span class="status-active" style="background-color: #FEF2F2; color: #B91C1C;">● Ngừng hoạt
+                                động</span></td>
+                        <td class="actions">
+                            <div class="actions-container">
+                                <img src="../assets/Icon/32px/remove.png" alt="remove" class="remove">
+                                <img src="../assets/Icon/32px/edit.png" alt="edit" class="edit">
+                            </div>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>DM005</td>
+                        <td>Thời trang nữ</td>
+                        <td><span class="status-active" style="background-color: #FEF2F2; color: #B91C1C;">● Ngừng hoạt
+                                động</span></td>
+                        <td class="actions">
+                            <div class="actions-container">
+                                <img src="../assets/Icon/32px/remove.png" alt="remove" class="remove">
+                                <img src="../assets/Icon/32px/edit.png" alt="edit" class="edit">
+                            </div>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>DM006</td>
+                        <td>Hoa quả</td>
+                        <td><span class="status-active" style="background-color: #FEF2F2; color: #B91C1C;">● Ngừng hoạt
+                                động</span></td>
+                        <td class="actions">
+                            <div class="actions-container">
+                                <img src="../assets/Icon/32px/remove.png" alt="remove" class="remove">
+                                <img src="../assets/Icon/32px/edit.png" alt="edit" class="edit">
+                            </div>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>DM007</td>
+                        <td>Rau</td>
+                        <td><span class="status-active">● Đang hoạt động</span></td>
+                        <td class="actions">
+                            <div class="actions-container">
+                                <img src="../assets/Icon/32px/remove.png" alt="remove" class="remove">
+                                <img src="../assets/Icon/32px/edit.png" alt="edit" class="edit">
+                            </div>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>DM008</td>
+                        <td>Điện thoại</td>
+                        <td><span class="status-active" style="background-color: #FEF2F2; color: #B91C1C;">● Ngừng hoạt
+                                động</span></td>
+                        <td class="actions">
+                            <div class="actions-container">
+                                <img src="../assets/Icon/32px/remove.png" alt="remove" class="remove">
+                                <img src="../assets/Icon/32px/edit.png" alt="edit" class="edit">
+                            </div>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="pagination">
+                <button>&larr;</button>
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>4</button>
+                <span>...</span>
+                <button>20</button>
+                <button>&rarr;</button>
+            </div>
+        </main>
+    </div>
+    <!-- Form add and update category -->
+    <div class="modal-add-overlay">
+        <div class="form_addCategory">
+            <div class="title_frame">
+                <p>Thêm mới danh mục</p>
+                <img src="../assets/Icon/32px/close.png" alt="close" class="close-icon">
+            </div>
+            <div class="frameAdd">
+                <label>Mã danh mục <span style="color: red;">*</span></label>
+                <input type="text">
+
+                <label>Tên danh mục <span style="color: red;">*</span></label>
+                <input type="text">
+
+                <label>Trạng thái</label>
+                <div id="checkStatus">
+                    <label><input type="radio" name="status" checked> Đang hoạt động</label>
+                    <label><input type="radio" name="status"> Ngừng hoạt động</label>
+                </div>
+                <hr>
+            </div>
+            <div class="btn">
+                <button class="btn-cancel">Hủy</button>
+                <button class="btn-submit">Thêm</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-edit-overlay">
+        <div class="form_editCategory">
+            <div class="title_frame">
+                <p>Cập nhật danh mục</p>
+                <img src="../assets/Icon/32px/close.png" alt="close" class="close-icon">
+            </div>
+            <div class="frameAdd">
+                <label>Mã danh mục <span style="color: red;">*</span></label>
+                <input type="text" placeholder="DM001">
+
+                <label>Tên danh mục <span style="color: red;">*</span></label>
+                <input type="text" placeholder="Quần áo">
+
+                <label>Trạng thái</label>
+                <div id="checkStatus">
+                    <label><input type="radio" name="status" checked> Đang hoạt động</label>
+                    <label><input type="radio" name="status"> Ngừng hoạt động</label>
+                </div>
+                <hr>
+            </div>
+            <div class="btn">
+                <button class="btn-cancel">Hủy</button>
+                <button class="btn-submit">Thêm</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
